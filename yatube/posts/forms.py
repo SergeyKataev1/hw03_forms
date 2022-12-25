@@ -8,6 +8,6 @@ class PostForm(forms.ModelForm):
         model = Post
         fields = ('text', 'group')
         widgets = {
-            'text': forms.Textarea(attrs={'class': 'form-control', 'rows': 7}),
-            'group': forms.Select(attrs={'class': 'form-control'})
+            'text': forms.Textarea(),
+            'group': forms.Select()
         }
